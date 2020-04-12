@@ -112,12 +112,47 @@ git remote
 git remote -v
 git remote add origin https://github.com/Legend-Fashion/REGAL-GARMENT.git
 
+//push repository to remote
+
 git push -u origin master
+
+//creating ssh key
 
 ssh-keygen -t rsa -b 4096 -C "legendsfashion2017@gmail.com
 
+//start ssh service
+
 eval $(ssh-agent -s)
+
+//saving generated ssh
 
 ssh-add ~/.ssh/id_rsa
 
+//retrieve ssh key
+
 tail ~/.ssh/id_rsa.pub
+
+
+
+//creating alias (shortcut for commands OR custom command)
+git config --global alias.ci commit
+
+//discard changes in working directory
+
+git restore this.txt
+
+//show the present branches
+
+git branch
+
+//create new branch and switch to it 
+
+git checkout -b bugfix
+
+//switching to branches
+
+git checkout bugfix
+
+
+//push other branches to remote (eother than master branch)
+git push origin bugfix
