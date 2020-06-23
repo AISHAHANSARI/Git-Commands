@@ -32,7 +32,7 @@ git status //also return if some new content added to file and commited or stage
 
 //initializing repository
 
-get init
+git init
 
 //staging all file
 
@@ -99,6 +99,8 @@ git rm --cached xyz.txt
 
 //to change in previous commit
 git commit --amend
+
+git  push --force //mostly used after amend i.e. changing in last commit 
 
 //to unstage
 git restore --staged xyz.txt
